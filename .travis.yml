@@ -1,5 +1,4 @@
-os:linux
-script: make dep && make && make test
-sudo:required
-compiler:
-  -gcc
+os: linux
+script: make clean && make test
+sudo: required
+install: make dep
